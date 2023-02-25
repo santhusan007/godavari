@@ -109,15 +109,30 @@ header .intro-text .skills {
 }
 
 #about{
-    background-image: url("/img/beac1.jpg");
+    background-image: url('/img/beac1.jpg');
     background-size: cover;
 
 }
+
+video {
+    width: 100% !important;
+    height: auto !important;
+}
+/* 
+@media(max-width:500px) {
+    .top-class video {   
+    height:40vh  
+    
+    
+       
+    }
+} */
 
 @media(min-width:768px) {
     header .container {
         padding-top: 125px;
         padding-bottom: 25px;
+        
     }
 
     header .intro-text .name {
