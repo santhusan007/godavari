@@ -107,7 +107,7 @@ header .intro-text .skills {
     font-size: 1.25em;
     font-weight: 300;
 }
-
+/* 
 #about-gokarna {
     background-image: url('https://source.unsplash.com/vZlTg_McCDo/1600x900');
     background-size: cover;
@@ -118,6 +118,17 @@ header .intro-text .skills {
     background-image: url('https://source.unsplash.com/vZlTg_McCDo/1600x900');
     background-size: cover;
 
+} */
+
+.socialswa {
+    width: 75px;
+    height: 75px;
+    /*background-color: #e46c0a;*/
+    border-radius: 30px 0 0 30px;
+    position: fixed;
+    right: 0;
+    bottom: 5px;
+    z-index: 20;
 }
 
 video {
