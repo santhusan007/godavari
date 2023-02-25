@@ -108,6 +108,12 @@ header .intro-text .skills {
     font-weight: 300;
 }
 
+#about-gokarna {
+    background-image: url('https://source.unsplash.com/vZlTg_McCDo/1600x900');
+    background-size: cover;
+
+}
+
 #about{
     background-image: url('https://source.unsplash.com/vZlTg_McCDo/1600x900');
     background-size: cover;
@@ -131,7 +137,7 @@ video {
 @media(min-width:768px) {
     header .container {
         padding-top: 125px;
-        padding-bottom: 25px;
+        padding-bottom:0px;
         
     }
 
