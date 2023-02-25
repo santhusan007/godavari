@@ -120,10 +120,7 @@ header .intro-text .skills {
 
 }
 
-video {
-    width: 100% !important;
-    height: auto !important;
-}
+
 /* 
 @media(max-width:500px) {
     .top-class video {   
