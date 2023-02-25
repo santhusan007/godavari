@@ -109,7 +109,7 @@ header .intro-text .skills {
 }
 
 #about{
-    background-image: url('/img/bg1.jpg');
+    background-image: url(/img/bg1.jpg);
     background-size: cover;
 
 }
