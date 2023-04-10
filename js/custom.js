@@ -18,23 +18,23 @@
         }
     });
 
-    // BACKSTRETCH SLIDESHOW
-    $('#about').backstretch([
-      "images/slide/1.jpg", 
-      "images/slide/2.jpg",
-      "images/slide/3.jpg",
-      "images/slide/4.jpg",
+    // // BACKSTRETCH SLIDESHOW
+    // $('#about').backstretch([
+    //   "images/slide/1.jpg", 
+    //   "images/slide/2.jpg",
+    //   "images/slide/3.jpg",
+    //   "images/slide/4.jpg",
       
-    ],  {duration: 2000});
+    // ],  {duration: 2000});
 
-    // BACKSTRETCH SLIDESHOW
-    $('#about-gokarna').backstretch([
-      "images/slide/4.jpg", 
-      "images/slide/1.jpg",
-      "images/slide/2.jpg",
-      "images/slide/3.jpg",
+    // // BACKSTRETCH SLIDESHOW
+    // $('#about-gokarna').backstretch([
+    //   "images/slide/4.jpg", 
+    //   "images/slide/1.jpg",
+    //   "images/slide/2.jpg",
+    //   "images/slide/3.jpg",
       
-    ],  {duration: 2000});
+    // ],  {duration: 2000});
 
 
   })(window.jQuery);
