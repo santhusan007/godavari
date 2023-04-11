@@ -708,11 +708,11 @@ img.aligncenter {
     }
 }
 .navbar-default .navbar-nav.navbar-right li {
-    margin: 0 0 0 15px;
+    margin: 0 0 0 25px;
 }
 @media (max-width: 1199px) {
     .navbar-default .navbar-nav.navbar-right li {
-        margin: 0 0 0 10px;
+        margin: 0 0 0 -50px;
     }
 }
 @media (max-width: 767px) {
@@ -729,11 +729,11 @@ img.aligncenter {
     }
 }
 .navbar-default .navbar-nav.navbar-right .dropdown-menu {
-    right: auto;
+    right: 0;
     left: 0;
 }
 .navbar-default .navbar-nav li {
-    margin: 0 15px 0 0;
+    margin: 0 0 0 0;
     padding-bottom: 20px;
     /*&:hover {
 				.dropdown-menu {
@@ -743,7 +743,7 @@ img.aligncenter {
 }
 @media (max-width: 1199px) {
     .navbar-default .navbar-nav li {
-        margin: 0 10px 0 0;
+        margin: 0 0 0 0;
     }
 }
 @media (max-width: 767px) {
@@ -752,7 +752,7 @@ img.aligncenter {
     }
 }
 .navbar-default .navbar-nav li a {
-    padding: 0 5px 0;
+    padding: 0;
     position: relative;
     color: #353535;
     border-bottom: 1px solid transparent;
@@ -4593,6 +4593,8 @@ form input:disabled ~ .fake-label {
     font-size: 20px;
     line-height: 50px;
 }
+
+
 @font-face {
     font-family: "icomoon";
     src: url("../fonts/icomoon.eot");
