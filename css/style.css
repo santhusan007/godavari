@@ -782,6 +782,48 @@ img.aligncenter {
         padding: 5px 15px 5px 25px;
     }
 }
+
+ .block1 {
+     position: relative;
+     margin-left: 17%;
+     /* margin: 300px auto 0; */
+     width: 85px;
+     height: 75px;
+     background: linear-gradient(0deg, #e71515, #e90b0b);
+ }
+
+ .block1:before,
+ .block1:after {
+     content: '';
+     position: absolute;
+     left: -2px;
+     top: -2px;
+     background: linear-gradient(45deg, #d10d0d, #efeff3, #780505, #f3f3ef, #e8e5e5, #9c979c,
+             #efeff2, #f30808, #f7f7f4, #eb0b0b);
+     background-size: 400%;
+     width: calc(100% + 4px);
+     height: calc(100% + 4px);
+     z-index: -1;
+     animation: steam 20s linear infinite;
+ }
+
+ @keyframes steam {
+     0% {
+         background-position: 0 0;
+     }
+
+     50% {
+         background-position: 400% 0;
+     }
+
+     100% {
+         background-position: 0 0;
+     }
+ }
+
+ .block:after {
+     filter: blur(50px);
+ }
 .navbar-default .navbar-nav li.active a,
 .navbar-default .navbar-nav li.open a {
     color: #353535;
