@@ -166,37 +166,31 @@
 
     <!-- Header -->
     <style>
-        .top-class {
-            position: relative;
-        }
 
-        .top-class video {
-            position: relative;
-            z-index: 0;
-        }
+.video-wrap {
+  z-index: -100;
+  margin-top: -4px;
+}
 
-        .overlay {
-            position: absolute;
-            top: 25%;
-            left: 25%;
-            z-index: 1;
-            color: aliceblue;
-        }
-
-        @media(min-width:500px) {
-            #myVideo {
-                width: 100%;
-                height: 600px;
-                object-fit: cover;
-                z-index: -100;
-            }
-        }
+.custom-video {
+  position: relative;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+  
     </style>
     <header id="home">
         <br><br><br>
-        <video id="myVideo" class="video-slide" style="width: 100%;margin-top: -4px;" src="go.mp4" autoplay="" muted=""
-            loop="" playsinline="">
-        </video>
+        <div class="video-wrap">
+            <video autoplay="" loop="" muted="" class="custom-video" poster="">
+                <source src="go.mp4" type="video/mp4">
+        
+                Your browser does not support the video tag.
+            </video>
+        </div>
 
 
         <!-- <div class="intro-text overlay">
@@ -210,8 +204,8 @@
     </header>
 
 
-    <section class="success" id="about-gokarna" style="background-image: url(./img/outer1.JPG);background-size:cover;color: white;background-repeat: no-repeat;"  >
-        <div class="container" data-aos="flip-right" data-aos-duration="3000" style="background-color: black;opacity: .7;">
+    <section class="success" id="about-gokarna" >
+        <div class="container" data-aos="flip-right" data-aos-duration="3000" >
             <div class="row">
 
             </div>
@@ -269,8 +263,8 @@
 
     <!-- Tings to do in gokarna  -->
 
-    <section class="success" id="things-gokarna" style="background-image: url(./img/outer2.JPG);background-size:cover;color: white;background-repeat: no-repeat;">
-        <div class="container" data-aos="flip-right" data-aos-duration="3000" style="background-color: black;opacity: .7;">
+    <section class="success" id="things-gokarna" >
+        <div class="container" data-aos="flip-right" data-aos-duration="3000">
             <div class="row">
 
             </div>
