@@ -84,7 +84,9 @@
     height: 120px;
     position: relative;
     transition: 0.25s ease; */
-    justify-content:center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;    
     animation: zoomin 3s ease;
     z-index: 10;
     position: relative;
