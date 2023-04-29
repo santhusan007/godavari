@@ -22,8 +22,10 @@
 
     <!-- Custom CSS -->
 
-
+    <link href="css/gallery.css" rel="stylesheet">
     <link href="css/freelancer.css" rel="stylesheet">
+    
+   
 
 
     <!-- Custom Fonts -->
@@ -74,6 +76,9 @@
         margin-left: 5px;
         padding: 0;
     }
+   
+    
+
 </style>
 
 <body id="page-top" class="index">
@@ -664,6 +669,77 @@
         </div>
     </section>
 
+    <!-- gallery test -->
+
+    <div class="container">
+        <div class="row">
+            <div class="gallery col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <h1 class="gallery-title">Gallery</h1>
+            </div>
+    
+            <div style="margin-left: 10px;justify-content: center;align-items: center;">
+                <button class="btn btn-default filter-button" data-filter="all">All</button>
+                <button class="btn btn-default filter-button" data-filter="rooms">ROOMS</button>
+                <button class="btn btn-default filter-button" data-filter="reception">RECEPTION</button>
+                <button class="btn btn-default filter-button" data-filter="OuterView">OUTER VIEW</button>
+                <button class="btn btn-default filter-button" data-filter="Amenities">AMENITIES</button>
+                <button class="btn btn-default filter-button" data-filter="Banquet">BANQUET</button>
+            </div>
+            <br />
+    
+    
+    
+            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter rooms">
+                <img src="http://fakeimg.pl/365x365/" class="img-responsive">
+            </div>
+    
+            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter rooms">
+                <img src="http://fakeimg.pl/365x365/" class="img-responsive">
+            </div>
+    
+            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter reception">
+                <img src="http://fakeimg.pl/365x365/" class="img-responsive">
+            </div>
+    
+            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter OuterView">
+                <img src="http://fakeimg.pl/365x365/" class="img-responsive">
+            </div>
+    
+            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter Amenities">
+                <img src="http://fakeimg.pl/365x365/" class="img-responsive">
+            </div>
+    
+            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter OuterView">
+                <img src="http://fakeimg.pl/365x365/" class="img-responsive">
+            </div>
+    
+            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter Amenities">
+                <img src="http://fakeimg.pl/365x365/" class="img-responsive">
+            </div>
+    
+            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter OuterView">
+                <img src="http://fakeimg.pl/365x365/" class="img-responsive">
+            </div>
+    
+            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter OuterView">
+                <img src="http://fakeimg.pl/365x365/" class="img-responsive">
+            </div>
+    
+            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter Banquet">
+                <img src="http://fakeimg.pl/365x365/" class="img-responsive">
+            </div>
+    
+            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter Amenities">
+                <img src="http://fakeimg.pl/365x365/" class="img-responsive">
+            </div>
+    
+            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter Banquet">
+                <img src="http://fakeimg.pl/365x365/" class="img-responsive">
+            </div>
+        </div>
+    </div>
+    </section>
+
     <!-- Contact Section -->
     <section class="success" id="book">
         <div class="container" style="background-color: #2E3092;">
@@ -835,7 +911,32 @@
     <script>
         AOS.init();
     </script>
+<script>
+    $(document).ready(function () {
 
+            $(".filter-button").click(function () {
+                var value = $(this).attr('data-filter');
+
+                if (value == "all") {
+                    //$('.filter').removeClass('hidden');
+                    $('.filter').show('1000');
+                }
+                else {
+                    //            $('.filter[filter-item="'+value+'"]').removeClass('hidden');
+                    //            $(".filter").not('.filter[filter-item="'+value+'"]').addClass('hidden');
+                    $(".filter").not('.' + value).hide('3000');
+                    $('.filter').filter('.' + value).show('3000');
+
+                }
+            });
+
+            if ($(".filter-button").removeClass("active")) {
+                $(this).removeClass("active");
+            }
+            $(this).addClass("active");
+
+        });
+</script>
 
 </body>
 
