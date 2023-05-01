@@ -102,6 +102,13 @@ header .intro-text .name {
     font-size: 3em;
     font-weight: 700;
 }
+header .intro-text .welcome {
+    display: block;
+    text-transform: uppercase;
+    font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 2em;
+    font-weight: 700;
+}
 
 header .intro-text .skills {
     font-size: 2em;

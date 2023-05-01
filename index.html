@@ -177,8 +177,8 @@
 
         .overlay {
             position: absolute;
-            top: 30%;
-            left: 30%;
+            top: 20%;
+            left: 40%;
             z-index: 1;
             color: aliceblue;
         }
@@ -194,8 +194,13 @@
   width: 100%;
   height: 100%
 }
-
-
+@media(max-width:500px) {
+    .overlay {
+            position: absolute;
+            top: 20%;
+            left: 30%;
+}
+}
   
     </style>
     <header id="home" class="video-screen">
@@ -210,9 +215,11 @@
 
 
          <div class="intro-text overlay">
+                        <span class="welcome">Welcome to</span>
                         <span class="name">Godavari</span>
                         <hr class="star-light" style="border-color: aliceblue;">
-                        <span class="skills">Gokarna</span>
+                        <span class="skills">Gokarna</span><br><br><br>
+                     <a href="#about">  <button class="btn btn-danger">Click to View</button></a>
                    
             </div> 
 
@@ -946,6 +953,13 @@
             $(this).addClass("active");
 
         });
+</script>
+
+<script>
+    randnumber = (min,max)=>{
+     return   Math.floor(Math.random() * (max - min + 1)) + min;
+    }
+    console.log(randnumber(5,12))
 </script>
 
 </body>
