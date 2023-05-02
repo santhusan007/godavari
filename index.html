@@ -78,7 +78,7 @@
     }
     section {
     border: 1px solid #4b2c0f;
-     border-radius: 20px;
+    border-radius: 20px;
     background-color: #9eac97;
     
     box-shadow: 0 0 10px 1px #4b2c0f;    
@@ -229,7 +229,10 @@
                         <span class="welcome">Welcome to</span>
                         <span class="name">Godavari</span>
                         <hr class="star-light" style="border-color: aliceblue;">
-                        <span class="skills">Gokarna</span><br><br><br><br><br><br><br><br><br><br><br><br><br>
+                        <span class="skills">Gokarna</span><br><br>
+                        <div id="bookings" class="skills1" style="border-radius: 10px;
+    background-color: #d3e8c9; box-shadow: 0 0 10px 1px #e27c1c;backdrop-filter: blur(15px);color: black;" > </div>
+                        <br><br><br><br><br><br><br><br><br>
                      <a href="#about">  <button class="btn btn-danger">Click to View</button></a>
                    
             </div> 
@@ -1032,9 +1035,11 @@
 
 
 <script>
+    var bookings = document.getElementById("bookings");
     randnumber = (min,max)=>{
      return   Math.floor(Math.random() * (max - min + 1)) + min;
     }
+    bookings.innerHTML=`Total Bookings Today : ${randnumber(5,12)}`
     
 
 </script>

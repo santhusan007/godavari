@@ -114,6 +114,10 @@ header .intro-text .skills {
     font-size: 2em;
     font-weight: 600;
 }
+header .intro-text .skills1 {
+    font-size: 1.5em;
+    font-weight: 600;
+}
 /* 
 #about-gokarna {
     background-image: url('https://source.unsplash.com/vZlTg_McCDo/1600x900');
@@ -166,6 +170,9 @@ video {
     header .intro-text .skills {
         font-size: 2em;
     }
+        header .intro-text .skills1 {
+            font-size: 1.5em;
+        }
 }
 
  @keyframes zoominoutsinglefeatured {
